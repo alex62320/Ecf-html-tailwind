@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn{
+        @apply h-10 px-5 text-white bg-indigo1 rounded-lg transition-colors duration-150 focus:shadow hover:bg-indigo2;
+    }
+    .text-bottom-image{
+        @apply absolute inset-x-0 bottom-0 md:bottom-4 h-16
+    }
+    .text-top-image{
+        @apply absolute inset-x-0 top-0 h-16
+    }
+    .text-right-image{
+        @apply absolute inset-y-0 right-10 w-28
+    }
+    .text-deco-image{
+        @apply md:text-4xl text-white
+    }
+}

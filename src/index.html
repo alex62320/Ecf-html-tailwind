@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecf html+css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate">
+    <div class="grid grid-cols-2 ">
+        <div class="col-span-2">
+            <img src="/src/image+video/2014-equus-logo.jpg" class="w-screen h-full" alt="">
+        </div>
+        <div class="col-span-2">
+            <video controls autoplay muted class="w-screen h-full">
+                <source src="/src/image+video/EQUUS Bass 770 , Elegance & Power.mp4">
+            </video>
+        </div>
+        <div class="col-span-2 relative text-center">
+            <img src="/src/image+video/equus bass 770.jpg" class="w-screen h-full" alt="">
+            <div class="text-top-image text-deco-image">
+              <p id="text">Authentic style
+                Singular in feeling with fastback styling, 
+                authentic and sensual body silhouette,</p>                
+            </div>
+        </div>
+        <div class="col-span-2 relative ">
+            <img src="/src/image+video/equus interieur.jpg" class="w-screen h-full" alt="">
+            <div class="text-right-image text-deco-image">                
+              <p id="text">Authentic style
+                Singular in feeling with fastback styling, 
+                authentic and sensual body silhouette,</p>  
+              </div>
+        </div>
+        <div class="col-span-2 relative">
+            <img src="/src/image+video/equus poste conducteur.jpg" class="w-screen h-full" alt="">
+            <div class="text-bottom-image text-deco-image">                
+              <p id="text">Authentic style
+                Singular in feeling with fastback styling, 
+                authentic and sensual body silhouette,</p>   
+              </div>
+        </div>
+        <div class="col-span-2 relative">
+            <img src="/src/image+video/equus compteur.jpg" class="w-screen h-full" alt="">
+            <div class="text-bottom-image text-deco-image">                
+              <p id="text">Authentic style
+                Singular in feeling with fastback styling, 
+                authentic and sensual body silhouette,</p>  
+              </div>
+        </div>
+        <div class="col-span-1">
+            <div class="relative flex min-h-screen flex-col justify-center px-2 ">
+                <div class="mx-auto flex w-95 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+                  <img class="aspect-video w-95 rounded-t-2xl object-cover object-center" src="/src/image+video/equus-bass770-2013-22-0cb4a3-0@1x.jpg" />
+                  <div class="p-4 text-center">
+                    <small class="text-blue-400 text-xs">Equus</small>
+                    <h1 class="text-2xl font-medium text-slate-600 pb-2 text-center">Equus bass 770</h1>
+                    <p class="tracking-tight font-light text-slate-400 leading-6 text-xl">The Equus Bass 770 is a handcrafted American luxury muscle car manufactured by the company Equus Automotive. It is named after Equus Automotive's founder Bassam Abdallah</p>
+                    <button onclick="commande()" class="btn" id="btn1">Commander</button>
+                    <script>
+                    function commande(){
+                        document.getElementById("btn1").onclick = commander;
+                    }
+                    function commander(){
+                        document.getElementById("object").value = "Equus Bass 770"
+                    }
+                    </script>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-span-1">
+            <div class="relative flex min-h-screen flex-col justify-center px-2">
+                <div class="mx-auto flex w-95 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+                  <img class="aspect-video w-95 rounded-t-2xl object-cover object-center" src="/src/image+video/secret car.jpg" />
+                  <div class="p-4 text-center">
+                    <small class="text-blue-400 text-xs">Equus</small>
+                    <h1 class="text-2xl font-medium text-slate-600 pb-2 text-center">Comming Soon</h1>
+                    <p class="text-xl tracking-tight font-light text-slate-400 leading-6">New SuperCar comming soon is a handcrafted American luxury muscle car manufactured by the company Equus Automotive. It is named after Equus Automotive's founder Bassam Abdallah</p>
+                    <button onclick="preInscription()" class="btn" id="btn2">Preinscription</button>
+                    <script>
+                      function preInscription(){
+                          document.getElementById("btn2").onclick = valide();
+                      }
+                      function valide(){
+                          document.getElementById("object").value = "PreInscription"
+                      }
+                      </script>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+        <div class="form">
+          <div class="w-full md:w-96 md:max-w-full mx-auto">
+            <div class="p-6 border border-gray-300 sm:rounded-md">
+              <form method="POST" action="https://herotofu.com/start">
+                <label class="block mb-6">
+                  <span class="text-white">Your name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    value=""
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    placeholder="Joe Bloggs"
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-white">Email address</span>
+                  <input
+                    name="email"
+                    type="email"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    placeholder="joe.bloggs@example.com"
+                    required
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-white">object</span>
+                  <input
+                    type="name"
+                    name="object"
+                    id="object"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    placeholder="Object"
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-white">Message</span>
+                  <textarea
+                    name="message"
+                    class="block w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    rows="3"
+                    placeholder="Tell us what you're thinking about..."
+                  ></textarea>
+                </label>
+                <div class="mb-6">
+                  <button
+                    type="submit"
+                    class="btn"
+                  >
+                    Send
+                  </button>
+                </div>
+                <div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
